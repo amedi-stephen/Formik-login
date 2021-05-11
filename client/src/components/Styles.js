@@ -56,3 +56,9 @@ export const StyledButton = styled(Link)`
         cursor: pointer;
     }
 `;
+
+export const StyledButtonGroup = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+`;

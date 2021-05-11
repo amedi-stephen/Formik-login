@@ -9,15 +9,13 @@ function App() {
   return (
     <Router>
       <StyledContainer>
-        <Home />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/dashboard" component={Dashboard} />
+        </Switch>
       </StyledContainer>
-      
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/dashboard" component={Dashboard} />
-      </Switch>
     </Router>
   );
 }
